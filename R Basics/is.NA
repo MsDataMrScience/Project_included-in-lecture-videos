@@ -1,0 +1,10 @@
+library(dslabs)
+data(na_example)
+str(na_example)
+mean(na_example)
+ind <- is.na(na_example)
+#to figure out number of entries with NA
+sum(ind)
+# Compute the average, for entries of na_example that are not NA 
+#remember ! operator used to figure out non-NA entries
+mean(na_example[!ind])
